@@ -1,0 +1,180 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Neox Examen",
+    "dateExported": "2023-10-18T05:14:25.457Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f238c96c-565f-4109-b9ea-93de2b7c1970",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Server Status",
+            "url": "http://localhost:3000/health",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-18T05:09:57.568Z",
+            "modified": "2023-10-18T05:09:57.568Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d4b23a2b-e02c-4bec-8e00-2f43928e3ec2",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-18T05:09:57.569Z",
+            "modified": "2023-10-18T05:13:03.001Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user\",\n  \"password\": \"newpassword\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "35e019a4-2f3c-4525-a7f2-c3b1f59dd871",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Password Change",
+            "url": "http://localhost:3000/auth/passwordChange",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-18T05:09:57.570Z",
+            "modified": "2023-10-18T05:11:25.262Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"correo@gmail.com\",\n  \"secretCode\":\"00129AH5\",\n  \"password\":\"newpassword\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d817352a-63de-4e16-afd1-df969a2ae1bc",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Generate Code",
+            "url": "http://localhost:3000/auth/generateCode",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-18T05:09:57.573Z",
+            "modified": "2023-10-18T05:09:57.573Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"correo@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8540df9-e4d1-4d43-b502-8afaf5354e62",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Get Users",
+            "url": "http://localhost:3000/users/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-18T05:09:57.571Z",
+            "modified": "2023-10-18T05:13:23.391Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNvcnJlb0BnbWFpbC5jb20iLCJuYW1lIjoidXNlciIsImlhdCI6MTY5NzYwNTk4MiwiZXhwIjoxNjk3NjA3NzgyfQ.3AGbuSX2zpaLjzfKf3gKF6yXwomDNtt5kBeGi9SN_Uw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5e31ae1-afe7-47e0-991a-f3ffce3762d3",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Create User",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-10-18T05:09:57.572Z",
+            "modified": "2023-10-18T05:09:57.572Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"user3\",\n  \"password\":\"password3\",\n  \"email\": \"mail3@mail.cl\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": ""
+            },
+            "tests": []
+        },
+        {
+            "_id": "2fc4de9f-f397-417f-a158-3a47ddae9771",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Delete User",
+            "url": "http://localhost:3000/users/2",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-10-18T05:09:57.574Z",
+            "modified": "2023-10-18T05:13:45.909Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNvcnJlb0BnbWFpbC5jb20iLCJuYW1lIjoidXNlciIsImlhdCI6MTY5NzYwNTk4MiwiZXhwIjoxNjk3NjA3NzgyfQ.3AGbuSX2zpaLjzfKf3gKF6yXwomDNtt5kBeGi9SN_Uw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e42110b8-f76c-4793-bf2a-eb98fbb2025d",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Update User",
+            "url": "http://localhost:3000/users/1",
+            "method": "PATCH",
+            "sortNum": 80000,
+            "created": "2023-10-18T05:09:57.575Z",
+            "modified": "2023-10-18T05:13:58.598Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user20\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNvcnJlb0BnbWFpbC5jb20iLCJuYW1lIjoidXNlciIsImlhdCI6MTY5NzYwNTk4MiwiZXhwIjoxNjk3NjA3NzgyfQ.3AGbuSX2zpaLjzfKf3gKF6yXwomDNtt5kBeGi9SN_Uw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8af96905-9b26-458b-9f9b-af5636ee6806",
+            "colId": "c93e744e-dcfd-4dd4-ba1a-9ca58ee19446",
+            "containerId": "",
+            "name": "Change User Status",
+            "url": "http://localhost:3000/users/status/2",
+            "method": "PATCH",
+            "sortNum": 90000,
+            "created": "2023-10-18T05:12:09.809Z",
+            "modified": "2023-10-18T05:14:05.076Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNvcnJlb0BnbWFpbC5jb20iLCJuYW1lIjoidXNlciIsImlhdCI6MTY5NzYwNTk4MiwiZXhwIjoxNjk3NjA3NzgyfQ.3AGbuSX2zpaLjzfKf3gKF6yXwomDNtt5kBeGi9SN_Uw"
+            },
+            "tests": []
+        }
+    ]
+}
