@@ -35,7 +35,7 @@ $ docker-compose up --build
 
 <p>
 El sistema crea un usuario inicial para realizar pruebas que se encuentra en init.ts donde se puede configurar username, password, email, etc.<br>
-Además hay una colección de consultas POST, GET, PUT y PATCH para probar los servicios publicados.
+Además hay una colección para probar los servicios publicados, importar el archivo 'thunder-collection_Neox Examen.json' con la extensión de VSCode 'Thunder Client'.
 </p>
 
 ## Support
